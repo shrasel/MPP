@@ -1,0 +1,5 @@
+package lab5.prob1;
+
+public interface QuackBehavior {
+	abstract void quack();
+}
