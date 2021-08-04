@@ -74,11 +74,8 @@ public class EmployeeInfo {
 				add(new Employee("Bob", 60000));
 			}
 		};
-//		List<Employee> list = new ArrayList<Employee>();
-//		list.add(new Employee("Bill", 60000));
-//		list.add(new Employee("Bill", 60000));
+
 		List<Employee> answer = removeDuplicates(list);
-//		System.out.println(answer);
 		System.out.println("Is answer correct? " + listsAreEqual(answer, dupsRemoved));
 	}
 

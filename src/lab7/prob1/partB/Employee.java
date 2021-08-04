@@ -30,7 +30,17 @@ public class Employee {
 		return "(" + name + ", " + salary + ")";
 	}
 
-	public boolean equals(Employee e) {
+//	public boolean equals(Employee e) {
+//		return e.name.equals(name) && e.salary == salary;
+//	}
+
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (obj == null || !(obj instanceof Employee)) {
+			return false;
+		}
+		Employee e = (Employee) obj;
 		return e.name.equals(name) && e.salary == salary;
 	}
 }

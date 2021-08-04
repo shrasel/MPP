@@ -1,0 +1,14 @@
+Explanation B:
+
+ class Employee does not override Object class equals method in proper way, 
+ proper way to implement the equals method is in below:
+ 
+ 	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (obj == null || !(obj instanceof Employee)) {
+			return false;
+		}
+		Employee e = (Employee) obj;
+		return e.name.equals(name) && e.salary == salary;
+	}

@@ -1,0 +1,10 @@
+Explanation C:
+      
+      In EmployeeInfo class, HashMap has been used to keep track of which Employee objects 
+      have been duplicated. And HashMap.containsKey() used in this method call
+      element1.hashcode.equals(element2.hashcode) method of default Object superclass 
+      and hashCode() method is not overridden in Employee sub class.
+      If we do not override this method then default hashCode() method 
+      calculates different hash codes for different objects with same value as well.
+
+      If we override hashCode in Employee class as in my implementation, it works.

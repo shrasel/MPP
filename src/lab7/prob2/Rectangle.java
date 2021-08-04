@@ -1,17 +1,30 @@
 package lab7.prob2;
 
-public final class Rectangle implements ClosedCurve {
-	final private double width;
-	final private double length;
+public class Rectangle implements Polygon {
+	private double length, width;
 
-	@Override
-	public double computePerimeter() {
-		double area = width * length;
-		return area;
+//	private double[] sides = new double[4];
+	public Rectangle(double length, double width) {
+		this.length = length;
+		this.width = width;
+//		sides[0] =
 	}
 
-	public Rectangle(double width, double length) {
-		this.width = width;
+	@Override
+	public double[] getSides() {
+		return new double[] { length, width, length, width };
+	}
+
+	// @Override
+	// public double computePerimeter() {
+	// return 2 * length + 2 * width;
+	// }
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
 		this.length = length;
 	}
 
@@ -19,7 +32,8 @@ public final class Rectangle implements ClosedCurve {
 		return width;
 	}
 
-	public double getLength() {
-		return length;
+	public void setWidth(double width) {
+		this.width = width;
 	}
+
 }

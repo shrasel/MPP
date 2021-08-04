@@ -1,0 +1,14 @@
+Java’s ArrayList 
+
+Implements 6 interfaces.
+
+	Serializable, 
+	Cloneable, 
+	Iterable<E>, 
+	Collection<E>, 
+	List<E>, 
+	RandomAccess
+
+Extends one class 
+
+	AbstractList<E>

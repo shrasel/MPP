@@ -11,6 +11,8 @@ public class DataMiner {
 		dm.objects.add(new Rectangle(5, 7));
 		dm.objects.add(new Rectangle(2, 9));
 		dm.objects.add(new Circle(6));
+		dm.objects.add(new EquilateralTriangle(5));
+		dm.objects.add(new Ellipse(5, 3));
 		System.out.println(dm.computeAveragePerimeter());
 	}
 

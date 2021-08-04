@@ -1,0 +1,12 @@
+Explanation D:
+         Here, Employee class is mutable, where property 'visited' can be changed from outside of the class.
+         Employee class override methods equals() and hashCode() with all three properties name, salary and
+         visited but during runtime inside method removeDuplicates() of EmployeeIfo, visited property has been
+         reset to true for the Employee objects which have been visited already.
+         But, dupsRemoved list has all the Employee objects with visited = false.
+
+         Now, while, comparing Employee objects with HashMap.containsKey(), it calls method equals and hashCode
+         which also compare visited property which always result in false.
+
+         Best practice : if a certain property of a class can change during runtime, we can exclude
+         that property from equals and hashCode overriding methods.
