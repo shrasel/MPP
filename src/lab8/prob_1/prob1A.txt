@@ -1,0 +1,29 @@
+Short answer
+
+a. For each lambda expression below, name the parameters and the free variables.
+
+i. Runnabler=()→ {
+	int[][] products = new int[s][t]; 
+	for (int i = 0; i < s; i++) {
+		for(int j = i + 1; j < t; j++) { 
+			products[i][j] = i * j;
+		} 
+	}
+}
+
+
+Answer: There is no parameter for the above lambda expression but there are few free variables 'i' and 'j' 
+
+
+===========
+
+ii.Comparator<String> comp = (s, t) → {
+	if(ignoreCase == true) {
+		return s.compareToIgnoreCase(t);
+	} else{
+		return s.compareTo(t);
+	} 
+}
+
+
+Answer: There is 2 parameters 's' and 't' for the above lambda expression and there is one free variable "ignoreCare"
