@@ -11,4 +11,6 @@ Topics that has been covered are listed below
 - JavaFX is a UI library in Java
 - Inner Classes and Nested Classes
 - Functional Programming in Java
+- Stream API
+- Java Generics
 
